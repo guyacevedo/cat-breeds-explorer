@@ -4,8 +4,6 @@ services:
     restart: unless-stopped
     volumes:
       - mongo-data:/data/db
-    ports:
-      - "27017:27017"
 
   backend:
     build: ./backend
@@ -19,8 +17,6 @@ services:
       CAT_API_KEY: ${CAT_API_KEY}
       JWT_SECRET: ${JWT_SECRET:-change_me_in_local_env}
       JWT_EXPIRES_IN: ${JWT_EXPIRES_IN:-1d}
-    ports:
-      - "3000:3000"
 
   frontend:
     build: ./frontend
@@ -28,7 +24,7 @@ services:
     depends_on:
       - backend
     ports:
-      - "8080:80"
+      - "80:80"
 
 volumes:
   mongo-data:
