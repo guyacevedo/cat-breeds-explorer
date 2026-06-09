@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-background text-on-background font-sans antialiased;
+}
+
+/* Ambient shadows from the Stitch design system. */
+.ambient-shadow-1 {
+  box-shadow: 0 2px 8px rgba(31, 41, 55, 0.04);
+}
+.ambient-shadow-2 {
+  box-shadow: 0 8px 20px rgba(217, 119, 87, 0.08);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -1,0 +1,73 @@
+/** Tailwind theme derived from the Google Stitch "Feline Ethos" design system. */
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ['./src/**/*.{html,ts}'],
+  theme: {
+    extend: {
+      colors: {
+        primary: '#99462a',
+        'primary-container': '#d97757',
+        'on-primary': '#ffffff',
+        'on-primary-container': '#541400',
+        'inverse-primary': '#ffb59e',
+        secondary: '#625e5a',
+        'secondary-container': '#e8e1dc',
+        'on-secondary': '#ffffff',
+        'on-secondary-container': '#686460',
+        'secondary-fixed-dim': '#ccc5c1',
+        tertiary: '#695c52',
+        background: '#f8f9ff',
+        'on-background': '#121c2a',
+        surface: '#f8f9ff',
+        'surface-dim': '#d0dbed',
+        'surface-container-lowest': '#ffffff',
+        'surface-container-low': '#eff4ff',
+        'surface-container': '#e6eeff',
+        'surface-container-high': '#dee9fc',
+        'surface-container-highest': '#d9e3f6',
+        'surface-variant': '#d9e3f6',
+        'on-surface': '#121c2a',
+        'on-surface-variant': '#55433d',
+        'inverse-surface': '#27313f',
+        outline: '#88726c',
+        'outline-variant': '#dbc1b9',
+        error: '#ba1a1a',
+        'error-container': '#ffdad6',
+        'on-error': '#ffffff',
+        'on-error-container': '#93000a',
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+      },
+      fontSize: {
+        'display-lg': ['48px', { lineHeight: '56px', letterSpacing: '-0.02em', fontWeight: '700' }],
+        'display-lg-mobile': ['32px', { lineHeight: '40px', letterSpacing: '-0.02em', fontWeight: '700' }],
+        'headline-md': ['24px', { lineHeight: '32px', letterSpacing: '-0.01em', fontWeight: '600' }],
+        'body-lg': ['18px', { lineHeight: '28px', fontWeight: '400' }],
+        'body-md': ['16px', { lineHeight: '24px', fontWeight: '400' }],
+        'label-caps': ['12px', { lineHeight: '16px', letterSpacing: '0.05em', fontWeight: '600' }],
+      },
+      spacing: {
+        unit: '8px',
+        gutter: '24px',
+        'margin-mobile': '16px',
+        'margin-desktop': '40px',
+      },
+      maxWidth: {
+        'container-max': '1280px',
+      },
+      borderRadius: {
+        DEFAULT: '0.5rem',
+        md: '0.75rem',
+        lg: '1rem',
+        xl: '1.5rem',
+        full: '9999px',
+      },
+      boxShadow: {
+        'ambient-1': '0 2px 8px rgba(31, 41, 55, 0.04)',
+        'ambient-2': '0 8px 20px rgba(217, 119, 87, 0.08)',
+      },
+    },
+  },
+  plugins: [],
+};
